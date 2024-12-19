@@ -93,3 +93,11 @@ button:hover {
     padding-right: 20px;
     min-width: unset; /* Disattiva la larghezza minima di Bootstrap */
 }
+
+.account {
+    margin-left: 1rem;
+}
+
+.accedi {
+    margin-left: 4.5rem;
+}
