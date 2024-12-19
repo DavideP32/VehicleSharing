@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('/project-work/images/Sfondo-login.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #333;
+}
+
+.glass-card{
+    background-color: #ffffff2d;
+    backdrop-filter: blur(2px);
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    text-align: center;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+input, select {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 0 auto 15px;
+    border: 2px solid #6a11cb;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    display: block;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+input:focus, select:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+.hidden {
+    display: none;
+}
+button {
+    width: calc(100% - 20px);
+    padding: 12px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+button:hover {
+    background-color: #2575fc;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-narrow {
+    width: auto; /* Si adatta al contenuto */
+    padding-left: 20px; /* Riduce il padding orizzontale */
+    padding-right: 20px;
+    min-width: unset; /* Disattiva la larghezza minima di Bootstrap */
+}

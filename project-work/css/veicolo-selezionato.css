@@ -1,0 +1,71 @@
+body {
+    background-image: url('/project-work/images/Sfondo-login.jpg');
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
+    backdrop-filter: blur(5px); /* Sfocatura per effetto vetro */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
+    padding: 1rem 1.5rem;
+}
+
+
+  .navbar-brand img {
+    height: 100px; /* Altezza maggiore per il logo */
+    max-height: none;
+}
+
+
+.vehicle-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Stile per la sezione delle caratteristiche */
+.vehicle-details {
+    margin-top: 20px;
+    margin-bottom: 4rem;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vehicle-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vehicle-details ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.vehicle-details ul li span {
+    font-weight: bold;
+}
