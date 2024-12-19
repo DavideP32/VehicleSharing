@@ -16,6 +16,12 @@ body {
     color: #000;
   }
 
+  .great-vibes-regular {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   .navbar {
     background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
     backdrop-filter: blur(5px); /* Sfocatura per effetto vetro */
@@ -27,9 +33,22 @@ body {
     padding: 1rem 1.5rem;
 }
 
+.navbar a{
+  color: #222831 !important;
+}
+
+.logo-titolo{
+  display: flex;
+}
+
+.logo-titolo h1{
+  padding-top: 1.5rem;
+  font-size: 1.7rem;
+  color: #222831;
+}
+
   .logo img{
-    width: 100px;
-    height: 100px;
+    height: 60px !important;
   }
 
   .hero {
