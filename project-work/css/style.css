@@ -30,7 +30,7 @@ body {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
-    padding: 1rem 1.5rem;
+    padding: 0 0;
 }
 
 .navbar a{
@@ -138,6 +138,7 @@ body {
 .card img {
   height: 200px;
   border-radius: 0;
+  padding: 20px 40px !important;
 }
 
 .card{
