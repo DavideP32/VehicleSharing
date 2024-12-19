@@ -5,7 +5,7 @@
 }
 
 body {
-    /* position: relative; */
+    position: relative;
     height: 100%;
   }
 
@@ -103,93 +103,27 @@ body {
   }
 
   .carosello{
-    padding: 100px 100px ;
-     
-    /* width: 50%; */
+    padding: 5% 5%;
+    width: 50%;
   }
 
-  /* .carousel-caption {
-    position: absolute;
-    bottom: 0;
+/* card  */
+.card img {
+  height: 200px;
+  border-radius: 0;
+}
 
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    font-size: 1rem;
-  } */
+.card{
+  border-radius: 0 !important;
+}
 
-  /* Carosello*/
-.carousel {
+/* footer */
+  .footer-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px auto;
-    max-width: 600px;
-    position: relative;
-}
-
-.carousel-btn {
-    background: none;
-    border: none;
-    font-size: 36px;
-    cursor: pointer;
-    color: #333;
-    position: absolute;
-}
-
-.carousel-btn.prev {
-    left: 10px;
-}
-
-.carousel-btn.next {
-    right: 10px;
-}
-
-.carousel-container {
-    display: flex;
-    overflow-x: scroll; 
-    scroll-behavior: smooth; 
-}
-
-.carousel-item {
-    flex: 0 0 100%;
+    justify-content: space-around;
     text-align: center;
     padding: 20px;
-}
-
-.poster {
-    max-width: 60%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.title {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #333;
-}
-
-.title a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.title a:hover {
-    color: #e70000;
-}
-
-.actors a {
-    text-decoration: none;
-    color: #0066cc;
-}
-
-.actors a:hover {
-    color: #004080;
-}
-
-.details {
-    font-size: 16px;
-    color: #666;
-}
+  }
+  .icons {
+    font-size: 1.2rem;
+  }
