@@ -175,19 +175,33 @@ body {
     font-size: 1.2rem;
 }
 
-.angled-image {
-    position: relative;
-    overflow: hidden;
-    height: 400px; /* Altezza fissa della sezione */
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    background-attachment: fixed; /* Effetto parallax */
-    background-size: cover;
-    background-position: center;
+.sfondo-car {
+  background: url('../images/sfondo-car.avif') center center/cover no-repeat;
+  height: 65vh;
+  color: white;
+  text-align: center;
+  align-items: center;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
+  background-attachment: fixed; /* Effetto parallax */
 }
 
-.angled-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Assicura che l'immagine riempia l'intera area */
-  display: block;
+.sfondo-scooter{
+  background: url('../images/sfondo-car.avif') center center/cover no-repeat;
+  height: 65vh;
+  color: white;
+  text-align: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
+  background-attachment: fixed; /* Effetto parallax */
 }
+
+.sfondo-monopattino {
+  background: url('../images/sfondo-monopattino.jpg') center center/cover no-repeat;
+  height: 65vh;
+  color: white;
+  text-align: center;
+  align-items: center;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
+  background-attachment: fixed; /* Effetto parallax */
+}
+
