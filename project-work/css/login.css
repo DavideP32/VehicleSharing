@@ -20,24 +20,22 @@ body {
     background-attachment: fixed;
 }
 
-.container {
+.containera {
     width: 90%;
     max-width: 400px;
     margin: 20px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 8rem;
 }
-h1 {
-    text-align: center;
-    color: #6a11cb;
-    margin-bottom: 20px;
-}
+
 label {
     display: block;
     margin: 15px 0 5px;
     font-weight: bold;
 }
+
 input, select {
     width: calc(100% - 24px);
     padding: 10px;
@@ -47,16 +45,20 @@ input, select {
     transition: border-color 0.3s ease;
     display: block;
 }
+
 input[type="radio"] {
     margin-right: 5px;
 }
+
 input:focus, select:focus {
     border-color: #2575fc;
     outline: none;
 }
+
 .hidden {
     display: none;
 }
+
 button {
     width: calc(100% - 20px);
     padding: 12px;
@@ -70,9 +72,11 @@ button {
     margin: 0 auto;
     display: block;
 }
+
 button:hover {
     background-color: #2575fc;
 }
+
 .footer {
     text-align: center;
     margin-top: 20px;
@@ -110,10 +114,23 @@ button:hover {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
-    padding: 1rem 1.5rem;
+    padding: 0 0;
 }
 
-  .logo img{
-    width: 100px;
-    height: 100px;
-  }
+.navbar a{
+  color: #222831 !important;
+}
+
+.logo-titolo{
+  display: flex;
+}
+
+.logo-titolo h1{
+  padding-top: 1.5rem;
+  font-size: 1.7rem;
+  color: #222831;
+}
+
+.logo img{
+    height: 60px !important;
+}
