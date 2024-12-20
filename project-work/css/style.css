@@ -1,209 +1,207 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
- 
+
 body {
-    /* position: relative; */
-    height: 100%;
-    background-color: white !important;
-  }
-
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    height: 100%;
+	/* position: relative; */
+	height: 100%;
+	background-color: white !important;
 }
 
-  h2{
-    font-size: 2rem;
-  }
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	height: 100%;
+}
 
-  .kaushan-script-regular {
-    font-family: "Kaushan Script", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .great-vibes-regular {
-    font-family: "Great Vibes", serif;
-    font-weight: 400;
-    font-style: normal;
+h2 {
+	font-size: 2rem;
+}
+
+.kaushan-script-regular {
+	font-family: "Kaushan Script", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.great-vibes-regular {
+	font-family: "Great Vibes", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .navbar {
-    background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
-    backdrop-filter: blur(5px); /* Sfocatura per effetto vetro */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
-    padding: 0 0;
+	background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
+	backdrop-filter: blur(5px); /* Sfocatura per effetto vetro */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
+	padding: 0 0;
 }
 
-.navbar a{
-  color: #222831 !important;
+.navbar a {
+	color: #222831 !important;
 }
 
-.logo-titolo{
-  display: flex;
+.logo-titolo {
+	display: flex;
 }
 
-.logo-titolo h1{
-  padding-top: 1.5rem;
-  font-size: 1.7rem;
-  color: #222831;
+.logo-titolo h1 {
+	padding-top: 1.5rem;
+	font-size: 1.7rem;
+	color: #222831;
 }
 
-  .logo img{
-    height: 60px !important;
-  }
+.logo img {
+	height: 60px !important;
+}
 
-  .hero {
-    background: url('../images/hero.jpg') center center/cover no-repeat;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    align-items: center;
+.hero {
+	background: url("../images/hero.jpg") center center/cover no-repeat;
+	height: 100vh;
+	color: white;
+	text-align: center;
+	align-items: center;
 }
 
 .hero h1 {
-    font-size: 5rem;
-    text-shadow: 1px 1px 2px black;
+	font-size: 5rem;
+	text-shadow: 1px 1px 2px black;
 }
 
 .hero p {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px black;
+	font-size: 2rem;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 2px black;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .autoplay-progress {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: var(--swiper-theme-color);
-
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: var(--swiper-theme-color);
 }
 
 .autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 10;
-    width: 50%;
-    height: 50%;
-    stroke-width: 4px;
-    stroke: var(--swiper-theme-color);
-    fill: none;
-    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
-    transition: stroke-dashoffset 10s linear !important;
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	z-index: 10;
+	width: 50%;
+	height: 50%;
+	stroke-width: 4px;
+	stroke: var(--swiper-theme-color);
+	fill: none;
+	stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+	stroke-dasharray: 125.6;
+	transform: rotate(-90deg);
+	transition: stroke-dashoffset 10s linear !important;
 }
 
-.carosello{
-    padding: 100px 100px ;
-     
-    /* width: 50%; */
+.carosello {
+	padding: 100px 100px;
+
+	/* width: 50%; */
 }
 
-.carosello{
-    padding: 5% 5%;
-    width: 50%;
+.carosello {
+	padding: 5% 5%;
+	width: 50%;
 }
 
 /* card  */
-.info-section{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.info-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .card img {
-  height: 300px;
-  width: 350px;
-  border-radius: 0;
-  padding: 20px 40px !important;
+	height: 300px;
+	width: 350px;
+	border-radius: 0;
+	padding: 20px 40px !important;
 }
 
-.card{
-  border-radius: 0 !important;
-  border: none;
+.card {
+	border-radius: 0 !important;
+	border: none;
 }
 
 /* footer */
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 20px;
-    background-color: #d6e4f0;
-    margin-top: 8rem;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 20px;
+	background-color: #d6e4f0;
+	margin-top: 8rem;
 }
 
 .icons {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .sfondo-car {
-  background: url('../images/sfondo-car.jpg') center center/cover no-repeat;
-  height: 65vh;
-  color: white;
-  text-align: center;
-  align-items: center;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
-  background-attachment: fixed; /* Effetto parallax */
+	background: url("../images/sfondo-car.jpg") center center/cover no-repeat;
+	height: 65vh;
+	color: white;
+	text-align: center;
+	align-items: center;
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
+	background-attachment: fixed; /* Effetto parallax */
 }
 
-.sfondo-scooter{
-  background: url('../images/sfondo-motorino.webp') center center/cover no-repeat;
-  height: 65vh;
-  color: white;
-  text-align: center;
-  align-items: center;
-  clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
-  background-attachment: fixed; /* Effetto parallax */
+.sfondo-scooter {
+	background: url("../images/sfondo-motorino.webp") center center/cover no-repeat;
+	height: 65vh;
+	color: white;
+	text-align: center;
+	align-items: center;
+	clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
+	background-attachment: fixed; /* Effetto parallax */
 }
 
 .sfondo-monopattino {
-  background: url('../images/sfondo-monopattino.webp') center center/cover no-repeat;
-  height: 65vh;
-  color: white;
-  text-align: center;
-  align-items: center;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
-  background-attachment: fixed; /* Effetto parallax */
+	background: url("../images/sfondo-monopattino.webp") center center/cover no-repeat;
+	height: 65vh;
+	color: white;
+	text-align: center;
+	align-items: center;
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 90%);
+	background-attachment: fixed; /* Effetto parallax */
 }
-
