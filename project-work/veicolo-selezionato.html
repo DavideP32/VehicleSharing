@@ -7,50 +7,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/veicolo-selezionato.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+
 
 
 
 
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container">
-            <a class="navbar-brand logo" href="#">
-                <img src="images/Rentastico-removebg-preview.png" alt="Logo" style="height: 40px;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container">
+
+      <div class="logo-titolo">
+          <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
+            <img src="images/logo.png" alt="Logo" style="height: 40px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+            <h1 class="great-vibes-regular">Rentastico</h1>
+            
+
+      </div>
+  
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown veicoli">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Veicoli
+            </a>
+            <ul class="dropdown-menu custom-dropdown">
+              <li><a class="dropdown-item" href="#">Auto</a></li>
+              <li><a class="dropdown-item" href="#">Moto</a></li>
+              <li><a class="dropdown-item" href="#">Monopattini</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link active" href="#contatti">Contatti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nome
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
+              <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
 
     <!-- Sezione Immagine del Veicolo -->
     <div class="container">
@@ -62,15 +101,93 @@
     <!-- Sezione Dettagli del Veicolo -->
     <div class="container">
         <div class="vehicle-details">
-            <h1>Nome Veicolo</h1>
+            <style>
+                .detail-card {
+                    background-color: #f9f9f9;
+                    border-radius: 8px;
+                    padding: 20px;
+                    text-align: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .detail-card img {
+                    width: 40px;
+                    margin-bottom: 10px;
+                }
+                .detail-card h6 {
+                    font-size: 16px;
+                    color: #555;
+                    margin: 0;
+                }
+                .detail-card p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .row.g-4 {
+                    justify-content: center;
+                }
+            </style>
+    
+    <div class="container my-5">
+        <h3 class="text-center mb-4">Dettagli dell'auto</h3>
+        <div class="row g-4">
+            <div class="col-md-4 col-lg-2">
+                <div class="detail-card">
+                    <i class="fas fa-tachometer-alt" style="font-size: 40px; color: #ff5722;"></i>
+                    <h6>Chilometraggio</h6>
+                    <p>55.580 km</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="detail-card">
+                    <i class="fas fa-gas-pump" style="font-size: 40px; color: #ff5722;"></i>
+                    <h6>Carburante</h6>
+                    <p>Benzina</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="detail-card">
+                    <i class="fas fa-cogs" style="font-size: 40px; color: #ff5722;"></i>
+                    <h6>Cambio</h6>
+                    <p>Cambio automatico</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="detail-card">
+                    <i class="fas fa-bolt" style="font-size: 40px; color: #ff5722;"></i>
+                    <h6>Potenza</h6>
+                    <p>136 CV / 100 kW</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="detail-card">
+                    <i class="fas fa-bolt" style="font-size: 40px; color: #ff5722;"></i>
+                    <h6>Autonomia</h6>
+                    <p>tot km</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezione Dettagli del Veicolo -->
+    <div class="container">
+        <div class="vehicle-details">
             <ul>
-                <li><span>Potenza:</span> 150 CV</li>
-                <li><span>Cilindrata:</span> 1998 cc</li>
+                <li><span>Modello:</span> 150 CV</li>
                 <li><span>Targa:</span> AB123CD</li>
-                <li><span>KM:</span> 45,000 km</li>
                 <li><span>Prezzo:</span> €25,000</li>
             </ul>
         </div>
     </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

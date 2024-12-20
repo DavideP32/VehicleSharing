@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
 
 
 
@@ -29,15 +28,16 @@
         <div class="container">
 
             <div class="logo-titolo">
-                <a class="navbar-brand logo" href="#">
+                <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
                     <img src="images/logo.png" alt="Logo" style="height: 40px;">
                 </a>
                 <h1 class="great-vibes-regular">Rentastico</h1>
+
+
             </div>
 
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -45,7 +45,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown veicoli">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Veicoli
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Auto</a></li>
+                            <li><a class="dropdown-item" href="#">Moto</a></li>
+                            <li><a class="dropdown-item" href="#">Monopattini</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#contatti">Contatti</a>
@@ -53,9 +63,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
                     </li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Nome
                         </a>
                         <ul class="dropdown-menu">
@@ -80,8 +90,7 @@
     <div class="container carosello">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/Dark Blue Minimalist Car Rental Deals Instagram Post.png"
-                        alt=""></div>
+                <div class="swiper-slide"><img src="images/Dark Blue Minimalist Car Rental Deals Instagram Post.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/Yellow Classic Scooter For Rent Instagram Post.png" alt="">
                 </div>
                 <div class="swiper-slide"><img src="images/Green and White Modern Car Rent Instagram Post.png" alt="">
@@ -108,7 +117,7 @@
         <div class="container">
             <div class="info-section">
                 <h2 class="section-title text-left kaushan-script-regular">Le nostre migliori auto</h2>
-                <a href="#">scopri tutti i modelli disponibili</a>
+                <a href="#" class="button">Scopri tutti i modelli disponibili</a>
             </div>
             <hr>
             <div class="row justify-content-around">
@@ -152,17 +161,50 @@
         <div class="container">
             <div class="info-section">
                 <h2 class="section-title text-left kaushan-script-regular">Gli scooter più richiesti</h2>
+                <a href="#" class="button">Scopri tutti i modelli disponibili</a>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card">
+                <img src="./images/card-2.webp" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title kaushan-script-regular">Card Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+            <div class="card">
+                <img src="./images/card3.webp" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title kaushan-script-regular">Card Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="sfondo-scooter">
+    </div>
+
+    <!-- carosello scooter -->
+    <!-- Cards Section -->
+    <div class="py-5 card-container">
+        <div class="container">
+            <div class="info-section">
+                <h2 class="section-title text-left kaushan-script-regular">Gli scooter più richiesti</h2>
                 <a href="#">scopri tutti i modelli disponibili</a>
             </div>
-            <hr>
-            <div class="row justify-content-around">
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card">
-                        <img src="./images/card2-1.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title kaushan-script-regular">Card Title</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                        </div>
+
+            <!-- carosello monopattini -->
+            <!-- Cards Section -->
+            <div class="py-5 card-container">
+                <div class="container">
+                    <div class="info-section">
+                        <h2 class="section-title text-left kaushan-script-regular">I monopattini più noleggiati</h2>
+                        <a href="#" class="button">Scopri tutti i modelli disponibili</a>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex justify-content-center">
@@ -187,62 +229,25 @@
         </div>
     </div>
 
-    <div class="sfondo-monopattino ">
-    </div>
-
-    <!-- carosello monopattini -->
-    <!-- Cards Section -->
-    <div class="py-5 card-container">
-        <div class="container">
-            <div class="info-section">
-                <h2 class="section-title text-left kaushan-script-regular">I monopattini più noleggiati</h2>
-                <a href="#">scopri tutti i modelli disponibili</a>
-            </div>
-            <hr>
-            <div class="row justify-content-around">
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card">
-                        <img src="./images/card3-1.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title kaushan-script-regular">Card Title</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card">
-                        <img src="./images/card3-2.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title kaushan-script-regular">Card Title</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card">
-                        <img src="./images/card3-3.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title kaushan-script-regular">Card Title</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer id="contatti">
-        <div class="footer-container">
-            <a href="#">Contattaci</a>
-            <div class="icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
+        <div class="footer-container ">
+            <a href="#" class="btn">Contattaci</a>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <a href="#">Chi siamo</a>
+
+            <a href="#" class="btn">Chi siamo</a>
+
         </div>
     </footer>
+
+</body>
+
+</html>
 
 </body>
 

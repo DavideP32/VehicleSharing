@@ -1,5 +1,5 @@
 // Richiamo il form
-const form = document.querySelector('.form');
+const form = document.querySelector('form');
 
 form.addEventListener('submit',  e => {
 
@@ -9,7 +9,7 @@ form.addEventListener('submit',  e => {
     
     const name = form.name.value.trim();
     const surname = form.surname.value.trim();
-    //DOBBIAMO INSERIRE LA DATA DI NASCITA
+    const dateOfBirth = form.birthdate.value.trim();
     const email = form.email.value.trim();
     const password = form.password.value.trim();
     const licenseFile = form.licenseFile.value.trim();
@@ -19,11 +19,22 @@ form.addEventListener('submit',  e => {
         nome: name,
         cognome: surname,
         email: email,
-        //DOBBIAMO INSERIRE LA DATA DI NASCITA
+        dataNascita: dateOfBirth,
         password: password,
-
-
+        ruolo: "UTENTE"
     };
+
+    fetch("http://localhost:8080/api/utente", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(utente)
+
+    })
+    .then(response =>{
+        return response.json();
+    })
 
 });
 
