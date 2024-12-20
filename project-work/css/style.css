@@ -152,7 +152,8 @@ body {
   justify-content: space-between;
 }
 .card img {
-  height: 200px;
+  height: 300px;
+  width: 350px;
   border-radius: 0;
   padding: 20px 40px !important;
 }
@@ -169,6 +170,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: #d6e4f0;
+    margin-top: 8rem;
 }
 
 .icons {
@@ -176,7 +178,7 @@ body {
 }
 
 .sfondo-car {
-  background: url('../images/sfondo-car.avif') center center/cover no-repeat;
+  background: url('../images/sfondo-car.jpg') center center/cover no-repeat;
   height: 65vh;
   color: white;
   text-align: center;
@@ -186,7 +188,7 @@ body {
 }
 
 .sfondo-scooter{
-  background: url('../images/sfondo-car.avif') center center/cover no-repeat;
+  background: url('../images/sfondo-motorino.webp') center center/cover no-repeat;
   height: 65vh;
   color: white;
   text-align: center;
@@ -196,7 +198,7 @@ body {
 }
 
 .sfondo-monopattino {
-  background: url('../images/sfondo-monopattino.jpg') center center/cover no-repeat;
+  background: url('../images/sfondo-monopattino.webp') center center/cover no-repeat;
   height: 65vh;
   color: white;
   text-align: center;
