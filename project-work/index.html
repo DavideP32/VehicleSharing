@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
 
 
 
@@ -25,10 +26,12 @@
             <div class="container">
     
               <div class="logo-titolo">
-                  <a class="navbar-brand logo" href="#">
+                  <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
                     <img src="images/logo.png" alt="Logo" style="height: 40px;">
                     </a>
                     <h1 class="great-vibes-regular">Rentastico</h1>
+                    
+
               </div>
           
     
@@ -41,7 +44,17 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown veicoli">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Veicoli
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown">
+                      <li><a class="dropdown-item" href="#">Auto</a></li>
+                      <li><a class="dropdown-item" href="#">Moto</a></li>
+                      <li><a class="dropdown-item" href="#">Monopattini</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a  class="nav-link active" href="#contatti">Contatti</a>
@@ -49,6 +62,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
                   </li>
+                  
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Nome
@@ -100,7 +114,7 @@
       <div class="container">
           <div class="info-section">
               <h2 class="section-title text-left kaushan-script-regular">Le nostre migliori auto</h2>
-              <a href="#">scopri tutti i modelli disponibili</a>
+              <a href="#" class="button">Scopri tutti i modelli disponibili</a>
           </div>
           <hr>
           <div class="row justify-content-around">
@@ -144,7 +158,7 @@
                 <div class="container">
                     <div class="info-section">
                         <h2 class="section-title text-left kaushan-script-regular">Gli scooter più richiesti</h2>
-                        <a href="#">scopri tutti i modelli disponibili</a>
+                        <a href="#" class="button">Scopri tutti i modelli disponibili</a>
                     </div>
                     <hr>
                     <div class="row justify-content-around">
@@ -188,7 +202,7 @@
                 <div class="container">
                     <div class="info-section">
                         <h2 class="section-title text-left kaushan-script-regular">I monopattini più noleggiati</h2>
-                        <a href="#">scopri tutti i modelli disponibili</a>
+                        <a href="#" class="button">Scopri tutti i modelli disponibili</a>
                     </div>
                     <hr>
                     <div class="row justify-content-around">
@@ -225,14 +239,17 @@
 
         <!-- Footer -->
         <footer id="contatti">
-          <div class="footer-container">
-              <a href="#">Contattaci</a>
-              <div class="icons">
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
+          <div class="footer-container ">
+              <a href="#" class="btn">Contattaci</a>
+
+              <div class="social-icons">
+                <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
-              <a href="#">Chi siamo</a>
+
+              <a href="#" class="btn">Chi siamo</a>
+
           </div>
       </footer>
         

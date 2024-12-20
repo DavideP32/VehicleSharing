@@ -20,6 +20,18 @@ body {
     background-attachment: fixed;
 }
 
+.great-vibes-regular {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .containera {
     width: 90%;
     max-width: 400px;
