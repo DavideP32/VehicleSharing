@@ -3,3 +3,5 @@
 //forza milan
 //forza napoli
 //vinciamo lo scudetto
+
+const mamma = mamma;
