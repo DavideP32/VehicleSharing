@@ -1,25 +1,16 @@
 body {
     background-image: url('/project-work/images/Sfondo-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
 }
+/* Background Section - End */
 
-.navbar {
-    background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
-    backdrop-filter: blur(5px); /* Sfocatura per effetto vetro */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
-    padding: 1rem 1.5rem;
-}
-
-
-  .navbar-brand img {
-    height: 100px; /* Altezza maggiore per il logo */
-    max-height: none;
-}
-
-
+/* -------------------------------------------------------------------------- */
+/*                               Vehicle Image                                */
+/* -------------------------------------------------------------------------- */
+/* Vehicle Image Section - Start */
 .vehicle-image {
     display: flex;
     justify-content: center;
@@ -35,21 +26,20 @@ body {
     height: auto;
     border-radius: 15px;
 }
+/* Vehicle Image Section - End */
 
-/* Stile per la sezione delle caratteristiche */
+/* -------------------------------------------------------------------------- */
+/*                          Vehicle Details Section                           */
+/* -------------------------------------------------------------------------- */
+/* Vehicle Details Section - Start */
 .vehicle-details {
     margin-top: 20px;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
     padding: 20px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.vehicle-details h1 {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .vehicle-details ul {
@@ -59,7 +49,7 @@ body {
 
 .vehicle-details ul li {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
@@ -68,4 +58,156 @@ body {
 
 .vehicle-details ul li span {
     font-weight: bold;
+}
+/* Vehicle Details Section - End */
+
+/* -------------------------------------------------------------------------- */
+/*                           Detail Card Section                              */
+/* -------------------------------------------------------------------------- */
+/* Detail Card Section - Start */
+.detail-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animazione per il movimento e l'ombra */
+
+}
+
+.detail-card img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.detail-card h6 {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.detail-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Effetto hover */
+.detail-card:hover {
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
+}
+/* Detail Card Section - End */
+
+/* -------------------------------------------------------------------------- */
+/*                             Row and Info                                   */
+/* -------------------------------------------------------------------------- */
+/* Row and Info Section - Start */
+.row.g-4 {
+    justify-content: center;
+}
+
+.info-maggiori {
+    width: 90%;
+    margin-top: 5rem;
+}
+/* Row and Info Section - End */
+/* -------------------------- Bottone per prenotare ------------------------- */
+.btn-suction {
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: #f9f9f9; /* Colore di sfondo per visibilità */
+    margin-top: -4rem;
+}
+
+.btn-suction::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn-suction:hover {
+    color: #fff;
+    transform: scale(0.95); /* Leggero rimpicciolimento */
+}
+
+.btn-suction:hover::after {
+    width: 200%;
+    height: 200%;
+}
+
+.btn-suction:active {
+    transform: translate(4px);
+}
+
+.btn-suction span {
+    position: relative;
+    z-index: 1; /* Porta il testo sopra l'effetto */
+}
+
+/* ---------------------------------- Mappa --------------------------------- */
+#map {
+    height: 50vh;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h5 {
+    margin-left: 1rem;
+}
+
+/* ------------------------------- Media Query ------------------------------ */
+/* --------------------------------- Desktop -------------------------------- */
+@media (min-width: 992px) {
+
+    .info-maggiori {
+        width: 50%;
+    }
+
+    #map {
+        height: 70vh;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h5 {
+        margin-left: 2rem;
+    }
 }

@@ -1,95 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadati del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veicolo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/veicolo-selezionato.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Collegamenti ai file CSS esterni -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- CSS personalizzato -->
     <link rel="stylesheet" href="./css/style.css">
-
-
-
-
-
-
+    <link rel="stylesheet" href="./css/veicolo-selezionato.css">
+    
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+            <!-- Logo e titolo -->
+            <div class="logo-titolo">
+                <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
+                    <img src="images/logo.png" alt="Logo" style="height: 40px;">
+                </a>
+                <h1 class="great-vibes-regular">Rentastico</h1>
+            </div>
 
-      <div class="logo-titolo">
-          <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
-            <img src="images/logo.png" alt="Logo" style="height: 40px;">
-            </a>
-            <h1 class="great-vibes-regular">Rentastico</h1>
-            
+            <!-- Bottone per il menu mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      </div>
-  
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown veicoli">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Veicoli
-            </a>
-            <ul class="dropdown-menu custom-dropdown">
-              <li><a class="dropdown-item" href="#">Auto</a></li>
-              <li><a class="dropdown-item" href="#">Moto</a></li>
-              <li><a class="dropdown-item" href="#">Monopattini</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-link active" href="#contatti">Contatti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Nome
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
-              <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
-            </ul>
-          </li>
-          
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
+            <!-- Collegamenti del menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown veicoli">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Veicoli
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Auto</a></li>
+                            <li><a class="dropdown-item" href="#">Moto</a></li>
+                            <li><a class="dropdown-item" href="#">Monopattini</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contatti">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nome
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
+                            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Sezione Immagine del Veicolo -->
     <div class="container">
@@ -98,96 +85,100 @@
         </div>
     </div>
 
-    <!-- Sezione Dettagli del Veicolo -->
-    <div class="container">
-        <div class="vehicle-details">
-            <style>
-                .detail-card {
-                    background-color: #f9f9f9;
-                    border-radius: 8px;
-                    padding: 20px;
-                    text-align: center;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    height: 200px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .detail-card img {
-                    width: 40px;
-                    margin-bottom: 10px;
-                }
-                .detail-card h6 {
-                    font-size: 16px;
-                    color: #555;
-                    margin: 0;
-                }
-                .detail-card p {
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin: 0;
-                }
-                .row.g-4 {
-                    justify-content: center;
-                }
-            </style>
-    
-    <div class="container my-5">
-        <h3 class="text-center mb-4">Dettagli dell'auto</h3>
-        <div class="row g-4">
-            <div class="col-md-4 col-lg-2">
-                <div class="detail-card">
-                    <i class="fas fa-tachometer-alt" style="font-size: 40px; color: #ff5722;"></i>
-                    <h6>Chilometraggio</h6>
-                    <p>55.580 km</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="detail-card">
-                    <i class="fas fa-gas-pump" style="font-size: 40px; color: #ff5722;"></i>
-                    <h6>Carburante</h6>
-                    <p>Benzina</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="detail-card">
-                    <i class="fas fa-cogs" style="font-size: 40px; color: #ff5722;"></i>
-                    <h6>Cambio</h6>
-                    <p>Cambio automatico</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="detail-card">
-                    <i class="fas fa-bolt" style="font-size: 40px; color: #ff5722;"></i>
-                    <h6>Potenza</h6>
-                    <p>136 CV / 100 kW</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-2">
-                <div class="detail-card">
-                    <i class="fas fa-bolt" style="font-size: 40px; color: #ff5722;"></i>
-                    <h6>Autonomia</h6>
-                    <p>tot km</p>
-                </div>
-            </div>
+    <!-- Sezione Dettagli dell'Auto -->
+    <div class="container vehicle-details">
+      <div class="container my-5">
+          <h3 class="text-center mb-4">Dettagli dell'auto</h3>
+          <div class="row g-4">
+              <!-- Card: Chilometraggio -->
+              <div class="col-md-4 col-lg-2">
+                  <div class="detail-card">
+                      <i class="fas fa-tachometer-alt" style="font-size: 40px; color: #ff5722;"></i>
+                      <h6>Chilometraggio</h6>
+                      <p>55.580 km</p>
+                  </div>
+              </div>
+              <!-- Card: Carburante -->
+              <div class="col-md-4 col-lg-2">
+                  <div class="detail-card">
+                      <i class="fas fa-gas-pump" style="font-size: 40px; color: #ff5722;"></i>
+                      <h6>Carburante</h6>
+                      <p>Benzina</p>
+                  </div>
+              </div>
+              <!-- Card: Cambio -->
+              <div class="col-md-4 col-lg-2">
+                  <div class="detail-card">
+                      <i class="fas fa-cogs" style="font-size: 40px; color: #ff5722;"></i>
+                      <h6>Cambio</h6>
+                      <p>Cambio automatico</p>
+                  </div>
+              </div>
+              <!-- Card: Potenza -->
+              <div class="col-md-4 col-lg-2">
+                  <div class="detail-card">
+                      <i class="fas fa-bolt" style="font-size: 40px; color: #ff5722;"></i>
+                      <h6>Potenza</h6>
+                      <p>136 CV / 100 kW</p>
+                  </div>
+              </div>
+              <!-- Card: Autonomia -->
+              <div class="col-md-4 col-lg-2">
+                  <div class="detail-card">
+                      <i class="fas fa-bolt" style="font-size: 40px; color: #ff5722;"></i>
+                      <h6>Autonomia</h6>
+                      <p>tot km</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Sezione Altri Dettagli -->
+      <div class="container info-maggiori">
+          <div class="vehicle-details">
+              <ul>
+                  <li><span>Modello:</span> 150 CV</li>
+                  <li><span>Targa:</span> AB123CD</li>
+                  <li><span>Prezzo:</span> €25,000</li>
+              </ul>
+          </div>
+      </div>
+        <div class="btn-container">
+            <button type="submit" class="btn-suction">Prenota ora</button>
         </div>
+
     </div>
 
-    <!-- Sezione Dettagli del Veicolo -->
-    <div class="container">
-        <div class="vehicle-details">
-            <ul>
-                <li><span>Modello:</span> 150 CV</li>
-                <li><span>Targa:</span> AB123CD</li>
-                <li><span>Prezzo:</span> €25,000</li>
-            </ul>
-        </div>
-    </div>
-    
-    
+        <!-- Div per la mappa -->
+        <div class="container vehicle-details">
+          <h1 class="h5 mb-4">
+            Questo veicolo si trova a: 
+            <span style="font-weight: bold; color: #f54a16;">Bacoli</span>
+          </h1>
 
+          <div id="map"></div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="contatti">
+          <div class="footer-container ">
+              <a href="#" class="btn">Contattaci</a>
+  
+              <div class="social-icons">
+                  <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+  
+              <a href="#" class="btn">Chi siamo</a>
+  
+          </div>
+      </footer>
+
+    <!-- Collegamento a Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./js/veicolo-selezionato.js"></script>
 </body>
 </html>
