@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* position: relative; */
+	height: 100%;
+	background-color: white !important;
+}
+
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	height: 100%;
+}
+
+.kaushan-script-regular {
+	font-family: "Kaushan Script", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.great-vibes-regular {
+	font-family: "Great Vibes", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.navbar {
+	background: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
+	backdrop-filter: blur(5px); /* Sfocatura per effetto vetro */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra leggera per separazione */
+	padding: 0 0;
+}
+
+.navbar a {
+	color: #222831 !important;
+}
+
+.logo-titolo {
+	display: flex;
+}
+
+.logo-titolo h1 {
+	padding-top: 1.5rem;
+	font-size: 1.7rem;
+	color: #222831;
+}
+
+.logo img {
+	height: 60px !important;
+}
+
+/* card  */
+.card-container h2 {
+	padding-bottom: 1rem;
+}
+
+.card-container {
+	padding-top: 7rem !important;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 0;
+	padding: 15px 15px;
+}
+
+.card {
+	border-radius: 0 !important;
+	/* margin: 20px 40px !important; */
+	/* width: 110% !important; */
+}
+
+/* Stile base del bollino */
+.availability-badge {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: #28a745; /* Verde per Disponibile */
+	color: white;
+	font-size: 0.8rem;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 20px;
+	z-index: 10;
+	text-transform: uppercase;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Colore rosso per Non Disponibile */
+.availability-badge.not-available {
+	background-color: #dc3545; /* Rosso */
+}
+
+hr {
+	margin-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+/* footer */
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 20px;
+	background-color: #d6e4f0;
+	margin-top: 8rem;
+}
+
+.icons {
+	font-size: 1.2rem;
+}
