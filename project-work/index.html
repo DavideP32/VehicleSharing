@@ -74,22 +74,20 @@
                     <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
                 </li>
                 <!-- Bollino con iniziale utente -->
-                <li class="nav-item user-badge">
-                    <a href="#" class="nav-link">
-                        <div class="badge-circle" id="userBadge">A</div>
-                    </a>
-                </li>
                 <!-- Dropdown Nome Utente -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Nome
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
-                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
-                </li>
+                <div class="d-flex align-items-center">
+                    <!-- Dropdown con bollino e freccia come un'unica entità -->
+                    <li class="nav-item dropdown user-badge">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="badge-circle" id="userBadge">N</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
+                            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </div>
             </ul>
         </div>
     </div>
@@ -119,7 +117,7 @@
                 <svg viewBox="0 0 48 48">
                     <circle cx="24" cy="24" r="20"></circle>
                 </svg>
-                <span></span>
+                <span class="d-none"></span>
             </div>
         </div>
     </div>
