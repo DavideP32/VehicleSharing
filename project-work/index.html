@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Font Awesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<!-- Swiper CSS for Carousels and Slides -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Swiper CSS for Carousels and Slides -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-<!-- Preconnect to Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
 
-<!-- CSS -->
-<link rel="stylesheet" href="./css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 
 
 
@@ -32,66 +32,66 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
 
-        <!-- Logo e titolo -->
-        <div class="logo-titolo">
-            <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
-                <img src="images/logo.png" alt="Logo" style="height: 40px;">
-            </a>
-            <h1 class="great-vibes-regular">Rentastico</h1>
-        </div>
+            <!-- Logo e titolo -->
+            <div class="logo-titolo">
+                <a class="navbar-brand logo" href="http://127.0.0.1:5500/project-work/index.html">
+                    <img src="images/logo.png" alt="Logo" style="height: 40px;">
+                </a>
+                <h1 class="great-vibes-regular">Rentastico</h1>
+            </div>
 
-        <!-- Pulsante toggle per il mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Pulsante toggle per il mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Contenuto della navbar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <!-- Link Home -->
-                <li class="nav-item">
-                    <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
-                </li>
-                <!-- Dropdown Veicoli -->
-                <li class="nav-item dropdown veicoli">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Veicoli</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a class="dropdown-item" href="#">Auto</a></li>
-                        <li><a class="dropdown-item" href="#">Moto</a></li>
-                        <li><a class="dropdown-item" href="#">Monopattini</a></li>
-                    </ul>
-                </li>
-                <!-- Link Contatti -->
-                <li class="nav-item">
-                    <a class="nav-link active" href="#contatti">Contatti</a>
-                </li>
-                <!-- Link Login -->
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
-                </li>
-                <!-- Bollino con iniziale utente -->
-                <!-- Dropdown Nome Utente -->
-                <div class="d-flex align-items-center">
-                    <!-- Dropdown con bollino e freccia come un'unica entità -->
-                    <li class="nav-item dropdown user-badge">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="badge-circle" id="userBadge">N</div>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
-                            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <!-- Contenuto della navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Link Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://127.0.0.1:5500/project-work/index.html">Home</a>
+                    </li>
+                    <!-- Dropdown Veicoli -->
+                    <li class="nav-item dropdown veicoli">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Veicoli</a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Auto</a></li>
+                            <li><a class="dropdown-item" href="#">Moto</a></li>
+                            <li><a class="dropdown-item" href="#">Monopattini</a></li>
                         </ul>
                     </li>
-                </div>
-            </ul>
+                    <!-- Link Contatti -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contatti">Contatti</a>
+                    </li>
+                    <!-- Link Login -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/project-work/login.html">Login</a>
+                    </li>
+                    <!-- Bollino con iniziale utente -->
+                    <!-- Dropdown Nome Utente -->
+                    <div class="d-flex align-items-center">
+                        <!-- Dropdown con bollino e freccia come un'unica entità -->
+                        <li class="nav-item dropdown user-badge">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="badge-circle" id="userBadge">N</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
+                                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
     <!-- Hero Section -->
@@ -270,18 +270,10 @@
         </div>
     </footer>
 
-</body>
 
-</html>
-
-</body>
-
-</html>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./js/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/home.js"></script>
 </body>
 
 </html>
