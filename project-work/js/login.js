@@ -22,7 +22,6 @@ form.addEventListener("submit", e =>{
 
     })
     .then(response =>{
-        console.log('Raw response:', response);
         if (!response.ok) {
             console.error('Errore durante il login:', response.status, response.statusText);
             throw new Error("Login fallito");
@@ -33,10 +32,11 @@ form.addEventListener("submit", e =>{
         console.log('Login riuscito:', utenteData);
         localStorage.setItem('utente', JSON.stringify(utenteData));
         // window.location.href = '/impostazioni.html'; 
-        window.location.replace('http://127.0.0.1:5500/project-work/index.html');
+        window.location.replace('http://localhost:5500/project-work/index.html');
     })
     .catch(error => {
         console.error('Errore durante il login:', error);
         alert('Login fallito. Controlla le credenziali.');
     });
 })
+
