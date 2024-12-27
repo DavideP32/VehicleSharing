@@ -40,3 +40,17 @@ form.addEventListener("submit", e =>{
     });
 })
 
+// se l'utente ha già effettuato il login ma in qualche modo tenta di accedere alla pagina di login
+document.addEventListener('DOMContentLoaded', () => {
+    verificaSessione()
+        .then(utenteData => {
+            // Se l'utente è autenticato, reindirizza alla homepage
+            if (utenteData) {
+                window.location.replace('http://localhost:5500/project-work/index.html');
+                console.log("utente già autenticato. Reindirizzato alla homepage");
+            }
+        })
+        .catch(error => {
+            console.log('Utente non autenticato, resta sulla pagina di login.');
+        });
+});
