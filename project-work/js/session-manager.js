@@ -15,21 +15,31 @@ function verificaSessione() {
             // }
             throw new Error('Utente non autenticato');
         }
-        return response.json();
+        return response.json().then(data =>{
+            console.log(data);
+            return data;
+        }
+        );
     });
 }
 
 function updateUI(utenteLoggato) {
     const bollino = document.getElementById("bollino-profilo");
     const loginText = document.getElementById("login-text");
+    const inizialeNome = document.getElementById("userBadge");
 
     if(utenteLoggato){
         loginText.classList.add("d-none");
         bollino.classList.remove("d-none");
+        inizialeNome.textContent = `${utenteLoggato.nome[0]}`;
     }else{
         loginText.classList.remove("d-none");
         bollino.classList.add("d-none");
     }
+}
+
+function prendiIniziale(nome) {
+    nome.charath
 }
 
 
@@ -42,7 +52,11 @@ function logout() {
         if (!response.ok) {
             throw new Error('Errore durante il logout');
         }
+        updateUI(null);
         window.location.replace('http://localhost:5500/project-work/login.html');
+    })
+    .catch(error => {
+        console.error('Errore durante il logout:', error);
     });
 }
 
@@ -56,4 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Utente non autenticato');
             updateUI(null);
         });
+
+    const logoutBtn = document.getElementById("logout");
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", () => {
+            logout();
+        });
+    }
 });
+
+
