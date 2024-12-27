@@ -30,13 +30,12 @@ form.addEventListener("submit", e =>{
     })
     .then(utenteData => {  
         console.log('Login riuscito:', utenteData);
-        localStorage.setItem('utente', JSON.stringify(utenteData));
-        // window.location.href = '/impostazioni.html'; 
+        // localStorage.setItem('utente', JSON.stringify(utenteData));
         window.location.replace('http://localhost:5500/project-work/index.html');
     })
     .catch(error => {
         console.error('Errore durante il login:', error);
-        alert('Login fallito. Controlla le credenziali.');
+        alert('Login fallito. Controlla le credenziali.');//questo lo dobbiamo cambiare!!!!!!!!!!!
     });
 })
 
