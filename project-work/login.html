@@ -20,60 +20,62 @@
        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
 
-          <div class="logo-titolo">
-              <a class="navbar-brand logo" href="index.html">
-                <img src="images/logo.png" alt="Logo" style="height: 40px;">
+            <!-- Logo e titolo -->
+            <div class="logo-titolo">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo" style="height: 40px;">
                 </a>
                 <h1 class="great-vibes-regular">Rentastico</h1>
-                
+            </div>
 
-          </div>
-      
+            <!-- Pulsante toggle per il mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown veicoli">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Veicoli
-                </a>
-                <ul class="dropdown-menu custom-dropdown">
-                  <li><a class="dropdown-item" href="#">Auto</a></li>
-                  <li><a class="dropdown-item" href="#">Moto</a></li>
-                  <li><a class="dropdown-item" href="#">Monopattini</a></li>
+            <!-- Contenuto della navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Link Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <!-- Dropdown Veicoli -->
+                    <li class="nav-item dropdown veicoli">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Veicoli</a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="all-auto.html">Auto</a></li>
+                            <li><a class="dropdown-item" href="all-scooter.html">Moto</a></li>
+                            <li><a class="dropdown-item" href="all-monopattini.html">Monopattini</a></li>
+                        </ul>
+                    </li>
+                    <!-- Link Contatti -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contatti">Contatti</a>
+                    </li>
+                    <!-- Link Login -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="login-text">Login</a>
+                    </li>
+                    <!-- Bollino con iniziale utente -->
+                    <!-- Dropdown Nome Utente -->
+                    <div class="d-flex align-items-center d-none" id="bollino-profilo">
+                        <!-- Dropdown con bollino e freccia come un'unica entità -->
+                        <li class="nav-item dropdown user-badge">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="badge-circle" id="userBadge">N</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
+                                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                <li><a class="dropdown-item" href="#" id="logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link active" href="#contatti">Contatti</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nome
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
-                  <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </li>
-              
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
       <form>
         <div class="containera d-flex flex-column glass-card">

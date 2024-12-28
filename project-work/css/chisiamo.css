@@ -7,6 +7,53 @@ body {
 }
 /* Background Section - End */
 
+
+.hero-section {
+    background: linear-gradient(90deg, #2c1a5b 0%, #481a85 100%);
+    height: 90vh;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    margin-top: 10rem;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    background-color: #6c4efc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #5a3ddb;
+}
+
+.hero-image img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 85%;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                               Vehicle Image                                */
 /* -------------------------------------------------------------------------- */
@@ -60,42 +107,37 @@ body {
 .vehicle-details ul li span {
     font-weight: bold;
 }
-/* Vehicle Details Section - End */
 
-/* -------------------------------------------------------------------------- */
-/*                           Detail Card Section                              */
-/* -------------------------------------------------------------------------- */
-/* Detail Card Section - Start */
 .detail-card {
-    background-color: #f9f9f9;
+    background-color: transparent;
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px; /* Aumentato lo spazio interno */
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 215px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Aumentata l'altezza per dare più spazio */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animazione per il movimento e l'ombra */
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .detail-card img {
-    width: 40px;
+    width: 120px;
     margin-bottom: 10px;
 }
 
 .detail-card h6 {
-    font-size: 16px;
+    font-size: 18px; /* Aumentata la dimensione del titolo */
     color: #555;
-    margin: 0;
+    margin-bottom: 15px;
 }
 
 .detail-card p {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px; /* Aumentata la dimensione del testo */
+    font-weight: 400;
     margin: 0;
+    color: #333;
 }
 
 /* Effetto hover */
