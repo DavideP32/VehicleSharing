@@ -1,0 +1,265 @@
+
+
+body {
+    background-image: url('/project-work/images/Sfondo-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+.kaushan-script-regular {
+	font-family: "Kaushan Script", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.profile-container {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 50px auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-top: 7rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cover-photo {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: url('https://source.unsplash.com/600x200/?ocean,sky') center/cover;
+}
+
+.edit-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.profile-pic {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #1a1a1a;
+    background: white;
+}
+
+.edit-avatar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(19, 18, 18);
+}
+
+/* Badge utente */
+.logo-utente {
+    display: inline-block;
+    position: relative;
+}
+
+.logo-utente .badge-circle {
+    width: 150px;
+    height: 150px;
+    font-size: 55px;
+}
+
+.edit-icon {
+    right: 5px;
+    font-size: 18px;  /* Dimensione dell'icona */
+    color: white;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.profile-content {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: left;
+}
+
+.form-control {
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    color: rgb(71, 70, 70);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid white;
+}
+
+.btn-custom {
+    width: 120px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-save {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+}
+
+.btn-cancel {
+    border: 2px solid #ff6600;
+    color: #ff6600;
+    background: none;
+}
+
+
+.selected-vehicle-section,
+.vehicle-history-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    color: white;
+}
+
+.selected-vehicle-section h3,
+.vehicle-history-section h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.vehicle-details p {
+    margin: 5px 0;
+}
+
+.vehicle-history-list {
+    list-style: none;
+    padding: 0;
+}
+
+.vehicle-history-list li {
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.vehicle-history-list li p {
+    margin: 5px 0;
+}
+
+.btn-custom {
+    width: 180px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-cancel-booking {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-cancel-booking:hover {
+    background-color: #ff3333;
+}
+
+.selected-vehicle-section .vehicle-details {
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+}
+
+.prenotato {
+    width: 40%;
+}
+
+.dettagli {
+    list-style: none;
+    padding-top: 5rem;
+    font-size: large;
+}
+
+.veicolo-prenotato {
+    gap: 20rem;
+}
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px !important;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem; /* Padding per dare un po' di spazio interno */
+}
+
+.card-body {
+    padding-top: 0;  /* Rimuove il padding top di default */
+    text-align: left;
+}
+
+.card .col-md-4 {
+    display: flex;
+    align-items: center; /* Centra verticalmente l'immagine */
+    justify-content: center;
+}
+
+.card .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .availability-badge {
+        font-size: 1rem; /* Adatta la dimensione del bottone per dispositivi più piccoli */
+    }
+}
+
+@media (min-width:992px) {
+    .card {
+        padding-left: 6rem;
+    }
+
+    .card-body {
+        padding-top: 3rem;
+        text-align: left;
+    }
+
+    .availability-badge {
+        font-size: larger;
+    }
+}
+
+
+@media (min-width:768px) {
+
+
+    .card-body {
+        padding-top: 3rem;
+    }
+}

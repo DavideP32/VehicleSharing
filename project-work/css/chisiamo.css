@@ -5,22 +5,22 @@ body {
     background-position: center;
     margin: 0;
 }
-/* Background Section - End */
 
-
+/* Hero Section */
 .hero-section {
-    background: linear-gradient(90deg, #2c1a5b 0%, #481a85 100%);
-    height: 90vh;
+    background: linear-gradient(90deg, #a498c2 0%, #481a85 100%);
+    height: 85vh;
     color: white;
-    padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Aggiunta per la responsività */
 }
 
 .hero-content {
-    margin-top: 10rem;
     padding: 40px;
+    width: 100%; /* Assicurarsi che la colonna prenda tutta la larghezza */
+    box-sizing: border-box;
 }
 
 .hero-content h1 {
@@ -50,19 +50,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     max-width: 85%;
-    margin-left: 10rem;
-    margin-top: 5rem;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                               Vehicle Image                                */
-/* -------------------------------------------------------------------------- */
-/* Vehicle Image Section - Start */
+/* Vehicle Image Section */
 .vehicle-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0; /* Spazio esterno sopra e sotto il contenitore */
+    margin: 100px 0;
     padding: 20px;
     background-color: #fff;
     border-radius: 15px;
@@ -74,12 +69,8 @@ body {
     height: auto;
     border-radius: 10px;
 }
-/* Vehicle Image Section - End */
 
-/* -------------------------------------------------------------------------- */
-/*                          Vehicle Details Section                           */
-/* -------------------------------------------------------------------------- */
-/* Vehicle Details Section - Start */
+/* Vehicle Details Section */
 .vehicle-details {
     margin-top: 20px;
     margin-bottom: 10rem;
@@ -108,13 +99,14 @@ body {
     font-weight: bold;
 }
 
+/* Detail Card */
 .detail-card {
     background-color: transparent;
     border-radius: 8px;
-    padding: 30px; /* Aumentato lo spazio interno */
+    padding: 30px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 300px; /* Aumentata l'altezza per dare più spazio */
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,39 +120,24 @@ body {
 }
 
 .detail-card h6 {
-    font-size: 18px; /* Aumentata la dimensione del titolo */
+    font-size: 18px;
     color: #555;
     margin-bottom: 15px;
 }
 
 .detail-card p {
-    font-size: 16px; /* Aumentata la dimensione del testo */
+    font-size: 16px;
     font-weight: 400;
     margin: 0;
     color: #333;
 }
 
-/* Effetto hover */
 .detail-card:hover {
     transform: translateY(-10px) scale(1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-/* Detail Card Section - End */
 
-/* -------------------------------------------------------------------------- */
-/*                             Row and Info                                   */
-/* -------------------------------------------------------------------------- */
-/* Row and Info Section - Start */
-.row.g-4 {
-    justify-content: center;
-}
-
-.info-maggiori {
-    width: 90%;
-    margin-top: 5rem;
-}
-/* Row and Info Section - End */
-/* -------------------------- Bottone per prenotare ------------------------- */
+/* Responsive Buttons */
 .btn-suction {
     background-color: #ff5722;
     color: #fff;
@@ -171,14 +148,6 @@ body {
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    margin-top: -4rem;
 }
 
 .btn-suction::after {
@@ -213,7 +182,13 @@ body {
     z-index: 1;
 }
 
-/* ---------------------------------- Mappa --------------------------------- */
+
+.faq-title {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Mappa */
 #map {
     height: 50vh;
     width: 95%;
@@ -230,27 +205,26 @@ body {
     margin-left: 1rem;
 }
 
-/* ------------------------------- Media Query ------------------------------ */
-/* --------------------------------- Desktop -------------------------------- */
-@media (min-width: 992px) {
-
-    .info-maggiori {
-        width: 50%;
+/* Media Queries */
+@media (min-width: 768px){
+    .hero-section {
+        background: linear-gradient(90deg, #a498c2 0%, #481a85 100%);
+        height: 100vh;
+        padding-top: 2rem;
     }
 
-    #map {
-        height: 70vh;
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .h5 {
-        margin-left: 2rem;
-    }
+    /* Detail Card */
+.detail-card {
+    height: 400px;
+    width: 250px;
+
 }
+
+.detail-card img {
+    width: 90px;
+}
+}
+
+@media (min-width: )
+
+

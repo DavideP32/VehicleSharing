@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utente</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Swiper CSS for Carousels and Slides -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pagina-utente.css">
+    <link rel="stylesheet" href="./css/veicolo-selezionato.css">
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+
+            <!-- Logo e titolo -->
+            <div class="logo-titolo">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo" style="height: 40px;">
+                </a>
+                <h1 class="great-vibes-regular">Rentastico</h1>
+            </div>
+
+            <!-- Pulsante toggle per il mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenuto della navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Link Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <!-- Dropdown Veicoli -->
+                    <li class="nav-item dropdown veicoli">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Veicoli</a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="all-auto.html">Auto</a></li>
+                            <li><a class="dropdown-item" href="all-scooter.html">Moto</a></li>
+                            <li><a class="dropdown-item" href="all-monopattini.html">Monopattini</a></li>
+                        </ul>
+                    </li>
+                    <!-- Link Contatti -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contatti">Contatti</a>
+                    </li>
+                    <!-- Link Login -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="login-text">Login</a>
+                    </li>
+                    <!-- Bollino con iniziale utente -->
+                    <!-- Dropdown Nome Utente -->
+                    <div class="d-flex align-items-center d-none" id="bollino-profilo">
+                        <!-- Dropdown con bollino e freccia come un'unica entità -->
+                        <li class="nav-item dropdown user-badge">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="badge-circle" id="userBadge">N</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nome e Cognome</a></li>
+                                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                <li><a class="dropdown-item" href="#" id="logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="profile-container">
+        <!-- Sfondo della copertura -->
+
+    
+        <!-- Immagine del profilo con l'icona di modifica all'interno -->
+        <div class="position-relative mt-3">
+            <!-- Badge utente -->
+            <a class="logo-utente" href="#" role="button">
+                <div class="badge-circle" id="userBadge">N</div>
+                <!-- Icona di modifica dentro il badge -->
+                <span class="edit-icon">✏️</span>
+            </a>
+        </div>
+    
+        <!-- Contenuto del profilo -->
+        <div class="profile-content">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" value="Nunzio">
+
+            <label class="form-label">Cognome</label>
+            <input type="text" class="form-control" value="Merone">
+
+            <label class="form-label">E-mail</label>
+            <input type="text" class="form-control" value="nunzmero@live.it">
+
+            <label class="form-label">Codice</label>
+            <input type="text" class="form-control" value="55678">
+    
+
+        </div>
+    
+        <!-- Pulsanti -->
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button class="btn btn-custom btn-save">SALVA</button>
+            <button class="btn btn-custom btn-cancel">ANNULLA</button>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-4">
+        <h2 class="kaushan-script-regular">Veicolo prenotato</h2>
+        <hr>
+        <div class="card shadow-sm border-0">
+            <div class="row g-0">
+                <!-- Immagine dell'auto -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="./images/fiat.png" class="img-fluid rounded-start img" alt="Auto">
+                </div>
+    
+                <!-- Dettagli dell'annuncio -->
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fiat Panda 1.2 benzina</h5>
+                        <p class="card-text text-muted small">Brindisi (BR) - Oggi alle 15:41</p>
+                        <p class="card-text text-danger fw-bold fs-4">3.500 €</p>
+                        <p class="card-text small text-secondary">Targa EG988AP • 108000 Km • Benzina • Manuale</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Bottone "Annulla" -->
+            <div class="text-center mt-2 mb-2">
+                <button class="btn availability-badge">ANNULLA</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <h2 class="kaushan-script-regular">Cronologia</h2>
+        <hr>
+        <div class="card shadow-sm border-0 mb-5">
+            <div class="row g-0">
+                <!-- Immagine dell'auto -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="./images/fiat.png" class="img-fluid rounded-start img" alt="Auto">
+                </div>
+    
+                <!-- Dettagli dell'annuncio -->
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fiat Panda 1.2 benzina</h5>
+                        <p class="card-text text-muted small">Brindisi (BR) - Oggi alle 15:41</p>
+                        <p class="card-text text-danger fw-bold fs-4">3.500 €</p>
+                        <p class="card-text small text-secondary">Targa EG988AP • 108000 Km • Benzina • Manuale</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card shadow-sm border-0 mb-5">
+            <div class="row g-0">
+                <!-- Immagine dell'auto -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="./images/fiat.png" class="img-fluid rounded-start img" alt="Auto">
+                </div>
+    
+                <!-- Dettagli dell'annuncio -->
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fiat Panda 1.2 benzina</h5>
+                        <p class="card-text text-muted small">Brindisi (BR) - Oggi alle 15:41</p>
+                        <p class="card-text text-danger fw-bold fs-4">3.500 €</p>
+                        <p class="card-text small text-secondary">Targa EG988AP • 108000 Km • Benzina • Manuale</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card shadow-sm border-0 mb-5">
+            <div class="row g-0">
+                <!-- Immagine dell'auto -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="./images/fiat.png" class="img-fluid rounded-start img" alt="Auto">
+                </div>
+    
+                <!-- Dettagli dell'annuncio -->
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fiat Panda 1.2 benzina</h5>
+                        <p class="card-text text-muted small">Brindisi (BR) - Oggi alle 15:41</p>
+                        <p class="card-text text-danger fw-bold fs-4">3.500 €</p>
+                        <p class="card-text small text-secondary">Targa EG988AP • 108000 Km • Benzina • Manuale</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card shadow-sm border-0 mb-5">
+            <div class="row g-0">
+                <!-- Immagine dell'auto -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="./images/fiat.png" class="img-fluid rounded-start img" alt="Auto">
+                </div>
+    
+                <!-- Dettagli dell'annuncio -->
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fiat Panda 1.2 benzina</h5>
+                        <p class="card-text text-muted small">Brindisi (BR) - Oggi alle 15:41</p>
+                        <p class="card-text text-danger fw-bold fs-4">3.500 €</p>
+                        <p class="card-text small text-secondary">Targa EG988AP • 108000 Km • Benzina • Manuale</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+                        
+                    
+                
+        
+
+        
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    
+
+
+    <!-- Footer -->
+    <footer id="contatti">
+        <div class="footer-container ">
+            <a href="#" class="btn">Contattaci</a>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <a href="#" class="btn">Chi siamo</a>
+
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/session-manager.js"></script>
+</body>
+
+</html>
