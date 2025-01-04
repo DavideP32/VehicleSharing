@@ -6,12 +6,12 @@
 
 body {
 	/* position: relative; */
+	background-image: url('../images/Sfondo-login.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 	height: 100%;
 	background-color: white !important;
-}
-
-body {
-	background: #eee;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #000;

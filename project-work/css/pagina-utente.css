@@ -129,6 +129,11 @@ h2 {
     background: none;
 }
 
+.availability-badge {
+    border: 2px solid #ff6600;
+    color: #ff6600;
+    background: none;
+}
 
 .selected-vehicle-section,
 .vehicle-history-section {
