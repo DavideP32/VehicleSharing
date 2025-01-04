@@ -21,7 +21,7 @@ L.marker([40.7982, 14.0747]).addTo(map)
                 <p><strong>Chilometraggio:</strong> ${selectedVehicle.km}</p>
                 <p><strong>Carburante:</strong> ${selectedVehicle.carburante}</p>
                 <p><strong>Potenza:</strong> ${selectedVehicle.potenza}</p>
-                <p><strong>Prezzo:</strong> €${selectedVehicle.prezzo}</p>
+                <p><strong>Prezzo:</strong> ${selectedVehicle.prezzo}</p>
             `;
         } else {
             // Se non ci sono dati salvati, mostra un messaggio di errore o di avviso
