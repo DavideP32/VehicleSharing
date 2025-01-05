@@ -23,7 +23,7 @@ document.querySelectorAll('.elimina').forEach(button => {
     });
 });
 
-// Funzione per aggiungere un metodo di pagamento
+// Funzione per eliminare un metodo di pagamento
 document.querySelectorAll('.elimina').forEach(button => {
     button.addEventListener('click', () => {
         Swal.fire({

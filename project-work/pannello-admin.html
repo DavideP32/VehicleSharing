@@ -111,6 +111,25 @@
                 <span class="edit-icon">✏️</span>
             </a>
         </div>
+        <div class="color-picker" id="colorPicker" style="display: none;">
+            <p>Scegli un colore:</p>
+            <div class="color-options">
+                <button class="color-btn" data-color="#FF5733" style="background-color: #FF5733;"></button>
+                <button class="color-btn" data-color="#33FF57" style="background-color: #33FF57;"></button>
+                <button class="color-btn" data-color="#3357FF" style="background-color: #3357FF;"></button>
+                <button class="color-btn" data-color="#FFD700" style="background-color: #FFD700;"></button>
+                <button class="color-btn" data-color="#FF1493" style="background-color: #FF1493;"></button>
+                <button class="color-btn" data-color="#4B0082" style="background-color: #4B0082;"></button>
+            </div>
+            <p>Oppure scegli manualmente:</p>
+            <input type="color" id="colorInput" />
+            <div class="color-actions">
+                <button id="applyColor">Applica</button>
+                <button id="cancelColor">Annulla</button>
+            </div>
+        </div>
+        
+        
     
         <!-- Contenuto del profilo -->
         <div class="profile-content">
@@ -254,6 +273,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/home.js"></script>
 <script src="js/session-manager.js"></script>
+<script src="js/modifiche.js"></script>
+
 </body>
 
 </html>

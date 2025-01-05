@@ -22,10 +22,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/pagina-utente.css">
     <link rel="stylesheet" href="./css/veicolo-selezionato.css">
+
+
 
 
 
@@ -110,6 +115,24 @@
                 <span class="edit-icon">✏️</span>
             </a>
         </div>
+        <div class="color-picker" id="colorPicker" style="display: none;">
+            <p>Scegli un colore:</p>
+            <div class="color-options">
+                <button class="color-btn" data-color="#FF5733" style="background-color: #FF5733;"></button>
+                <button class="color-btn" data-color="#33FF57" style="background-color: #33FF57;"></button>
+                <button class="color-btn" data-color="#3357FF" style="background-color: #3357FF;"></button>
+                <button class="color-btn" data-color="#FFD700" style="background-color: #FFD700;"></button>
+                <button class="color-btn" data-color="#FF1493" style="background-color: #FF1493;"></button>
+                <button class="color-btn" data-color="#4B0082" style="background-color: #4B0082;"></button>
+            </div>
+            <p>Oppure scegli manualmente:</p>
+            <input type="color" id="colorInput" />
+            <div class="color-actions">
+                <button id="applyColor">Applica</button>
+                <button id="cancelColor">Annulla</button>
+            </div>
+        </div>
+        
     
         <!-- Contenuto del profilo -->
         <div class="profile-content">
@@ -160,7 +183,7 @@
     
             <!-- Bottone "Annulla" -->
             <div class="text-center mt-2 mb-2">
-                <button class="btn availability-badge">ANNULLA</button>
+                <button class="btn availability-badge annulla-prenotazione">ANNULLA</button>
             </div>
         </div>
     </div>
@@ -282,7 +305,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
 <script src="js/home.js"></script>
+<script src="js/modifiche.js"></script>
 <script src="js/session-manager.js"></script>
 </body>
 
