@@ -188,18 +188,6 @@ body {
     color: #0056b3;
 }
 
-/* Mappa */
-#map {
-    height: 50vh;
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .h5 {
     margin-left: 1rem;
@@ -224,7 +212,3 @@ body {
     width: 90px;
 }
 }
-
-@media (min-width: )
-
-

@@ -49,13 +49,15 @@ document.querySelectorAll('.elimina').forEach(button => {
     });
 });
 
+
+
 // Funzione per aggiungere un metodo di pagamento
 document.querySelector('.btn-metodo-pagamento').addEventListener('click', () => {
     Swal.fire({
         title: 'Aggiungi metodo di pagamento',
         html: `
-            <input type="text" id="metodo" class="swal2-input" placeholder="Numero Carta">
-            <input type="text" id="titolo" class="swal2-input" placeholder="Titolo (Visa, MasterCard, ecc.)">
+            <input type="text" id="metodo" class="swal2-input" placeholder="Tipo carta (Visa, MasterCard, etc.)">
+            <input type="text" id="titolo" class="swal2-input" placeholder="Numero carta">
         `,
         focusConfirm: false,
         showCancelButton: true,  // Aggiungi il bottone annulla
@@ -63,18 +65,31 @@ document.querySelector('.btn-metodo-pagamento').addEventListener('click', () => 
         preConfirm: () => {
             const metodo = document.getElementById('metodo').value;
             const titolo = document.getElementById('titolo').value;
+            
+            // Validazione dei campi
             if (!metodo || !titolo) {
                 Swal.showValidationMessage('Per favore, inserisci tutti i campi');
                 return false;
             }
+
+            // Validazione del numero della carta (verifica solo lunghezza, come esempio)
+            if (!/^\d{16}$/.test(titolo)) {
+                Swal.showValidationMessage('Numero carta non valido. Deve essere composto da 16 cifre.');
+                return false;
+            }
+
             return { metodo, titolo };
         }
     }).then((result) => {
         if (result.isConfirmed) {
             const { metodo, titolo } = result.value;
+
+            // Funzione per mascherare il numero della carta
+            const titoloMascherato = `**** **** **** ${titolo.slice(-4)}`;
+
             const newMetodoHtml = `
                 <div class="d-flex align-items-center metodo-pagamento">
-                    <span class="carta-di-credito">${titolo} ${metodo}</span>
+                    <span class="carta-di-credito">${metodo} ${titoloMascherato}</span>
                     <button class="elimina btn btn-sm btn-danger ms-auto">Elimina</button>
                 </div>
             `;
@@ -112,6 +127,8 @@ document.querySelector('.btn-metodo-pagamento').addEventListener('click', () => 
         }
     });
 });
+
+
 
 
 //Aggiorna patente
