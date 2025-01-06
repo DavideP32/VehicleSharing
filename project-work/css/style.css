@@ -352,6 +352,10 @@ h2 {
 .button:hover {
 	background-color: rgb(200, 200, 200);
 }
+
+.btn-aggiorna {
+	background-color: rgb(48, 133, 214) !important;
+}
 /* Button Section - End */
 
 @media screen and (max-width: 767px) {
