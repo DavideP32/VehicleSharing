@@ -11,7 +11,7 @@ document.querySelectorAll('.color-btn').forEach(btn => {
     btn.addEventListener('click', function () {
         const selectedColor = this.getAttribute('data-color');
         // Seleziona l'elemento con la classe .badge-circle e cambia il suo colore
-        document.querySelector('.badge-circle').style.backgroundColor = selectedColor;
+        document.getElementById('userBadgeProfilo').style.backgroundColor = selectedColor;
         document.getElementById('colorPicker').style.display = 'none';  // Nascondi il color picker
     });
 });
@@ -20,7 +20,7 @@ document.querySelectorAll('.color-btn').forEach(btn => {
 document.getElementById('applyColor').addEventListener('click', function () {
     const newColor = document.getElementById('colorInput').value;
     // Seleziona l'elemento con la classe .badge-circle e cambia il suo colore
-    document.querySelector('.badge-circle').style.backgroundColor = newColor;
+    document.getElementById('userBadgeProfilo').style.backgroundColor = newColor;
     document.getElementById('colorPicker').style.display = 'none';  // Nascondi il color picker
 });
 

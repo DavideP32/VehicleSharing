@@ -11,4 +11,4 @@ function selezionaVeicolo(modello, km, carburante, potenza, prezzo, immagine) {
 
     // Salva i dettagli nel localStorage
     localStorage.setItem('selectedVehicle', JSON.stringify(vehicleDetails));
-}
+} 

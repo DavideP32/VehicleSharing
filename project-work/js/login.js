@@ -23,7 +23,6 @@ form.addEventListener("submit", e =>{
     })
     .then(response =>{
         if (!response.ok) {
-            console.error('Errore durante il login:', response.status, response.statusText);
             throw new Error("Login fallito");
         }
         return response.json()
