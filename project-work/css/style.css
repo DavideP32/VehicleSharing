@@ -39,22 +39,22 @@ h2 {
 
 /* Navbar Section - Start */
 .navbar {
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 0;
+	background: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(5px);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 0;
 }
 
 /* Contenitore principale della navbar */
 .navbar .container {
-    display: flex;
-    align-items: center; /* Centra verticalmente gli elementi */
-    justify-content: space-between; /* Spaziatura tra logo/titolo e menu */
-    height: 70px; /* Altezza uniforme per la navbar */
+	display: flex;
+	align-items: center; /* Centra verticalmente gli elementi */
+	justify-content: space-between; /* Spaziatura tra logo/titolo e menu */
+	height: 70px; /* Altezza uniforme per la navbar */
 }
 
 .navbar h1 {
@@ -63,109 +63,105 @@ h2 {
 
 /* Link della navbar */
 .navbar a {
-    color: #222831 !important;
-    font-size: 15px;
-    align-items: center;
-    justify-content: center;
+	color: #222831 !important;
+	font-size: 15px;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Logo e titolo */
 .logo-titolo {
-    display: flex;
-    align-items: center; /* Centra verticalmente logo e titolo */
+	display: flex;
+	align-items: center; /* Centra verticalmente logo e titolo */
 }
 
 .logo-titolo h1 {
-    margin-left: 10px; /* Spazio tra logo e titolo */
-    font-size: 1.5rem;
-    color: #222831;
-    line-height: 1; /* Allinea meglio il testo */
+	margin-left: 10px; /* Spazio tra logo e titolo */
+	font-size: 1.5rem;
+	color: #222831;
+	line-height: 1; /* Allinea meglio il testo */
 }
 
 .logo img {
-    height: 60px !important;
+	height: 60px !important;
 }
 
 /* Navbar links */
 .navbar-nav {
-    display: flex;
-    align-items: center; /* Centra verticalmente i link */
-    gap: 15px; /* Spaziatura tra i link */
+	display: flex;
+	align-items: center; /* Centra verticalmente i link */
+	gap: 15px; /* Spaziatura tra i link */
 }
 
 .nav-item {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 /* Stile per il bollino con l'iniziale */
 /* Contenitore del badge e della freccia */
 /* Contenitore del dropdown con bollino */
 .user-badge .nav-link {
-    display: flex;
-    align-items: center; /* Centra bollino e freccia verticalmente */
-    gap: 5px; /* Spaziatura tra bollino e freccia */
-    padding: 0; /* Rimuove padding predefinito */
+	display: flex;
+	align-items: center; /* Centra bollino e freccia verticalmente */
+	gap: 5px; /* Spaziatura tra bollino e freccia */
+	padding: 0; /* Rimuove padding predefinito */
 }
 
 /* Stile per il bollino (badge) */
 .badge-circle {
-    width: 40px;
-    height: 40px;
-    background-color: #007bff;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+	width: 40px;
+	height: 40px;
+	background-color: #007bff;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
 }
 
 .badge-circle:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* Dropdown menu */
 .dropdown-menu {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #e9ecef;
-    color: #007bff;
+	background-color: #e9ecef;
+	color: #007bff;
 }
-
-
 
 /* Pulsante toggle per il mobile */
 .navbar-toggler {
-    display: flex;
-    align-items: center; /* Centra verticalmente il pulsante */
-    justify-content: center;
-    border: none; /* Rimuove il bordo predefinito */
+	display: flex;
+	align-items: center; /* Centra verticalmente il pulsante */
+	justify-content: center;
+	border: none; /* Rimuove il bordo predefinito */
 }
 
 /* Dropdown menu personalizzato */
 .custom-dropdown {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .custom-dropdown .dropdown-item:hover {
-    background-color: #e9ecef;
-    color: #007bff;
+	background-color: #e9ecef;
+	color: #007bff;
 }
 /* Navbar Section - End */
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                                Hero Section                                */
@@ -357,3 +353,9 @@ h2 {
 	background-color: rgb(200, 200, 200);
 }
 /* Button Section - End */
+
+@media screen and (max-width: 767px) {
+	.hero {
+		height: 500px;
+	}
+}
