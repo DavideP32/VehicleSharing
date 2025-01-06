@@ -75,6 +75,7 @@ body {
 
 .card {
 	border-radius: 0 !important;
+	min-width: 19rem;
 	/* margin: 20px 40px !important; */
 	/* width: 110% !important; */
 }
