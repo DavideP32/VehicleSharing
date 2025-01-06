@@ -148,3 +148,12 @@ updateButton.addEventListener("click", function() {
     // Nascondi il pulsante dopo l'aggiornamento
     updateButton.style.display = "none";
 });
+
+
+const changeFile = document.getElementById('licenseFile');
+const fileNameDisplay = document.querySelector('.file-name');
+
+changeFile.addEventListener('change', () => {
+  const fileName = changeFile.files[0]?.name || "Nessun file selezionato";
+  fileNameDisplay.textContent = fileName;
+});
