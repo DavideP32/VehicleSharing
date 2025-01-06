@@ -23,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-console.log("idiota");
+
 
 
 
