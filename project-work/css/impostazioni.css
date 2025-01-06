@@ -30,11 +30,6 @@ h2 {
 	margin-bottom: 10px;
 }
 
-.settings-item a {
-	color: #000;
-	text-decoration: none;
-	font-size: 1.2rem;
-}
 
 .settings-item a:hover {
 	text-decoration: underline;
@@ -103,3 +98,32 @@ h5 {
 	background-color: transparent;
 	text-decoration: none !important;
 }
+
+
+#licenseFile {
+	display: none;
+  }
+
+  .btn-file {
+	background-color: #007BFF; /* Colore blu */
+	color: #fff; /* Testo bianco */
+	padding: 5px 15px; /* Spaziatura interna */
+	font-weight: 500; /* Peso del font */
+	text-align: center; /* Centra il testo */
+	border: none; /* Nessun bordo */
+	border-radius: 5px; /* Angoli arrotondati */
+	transition: background-color 0.3s ease; /* Effetto al passaggio del mouse */
+  }
+  
+  .btn-file:hover {
+	background-color: #0056b3; /* Cambia colore al passaggio del mouse */
+  }
+
+  .file-name {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 8px; /* Sposta solo la scritta verso il basso */
+	font-size: 14px;
+	color: #555;
+	vertical-align: middle; /* Allinea la scritta con il bottone */
+  }
