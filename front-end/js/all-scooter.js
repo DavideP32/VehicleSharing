@@ -37,7 +37,7 @@ fetch("http://localhost:8080/api/veicolo").then(response => {
             `<div class="col-md-6 col-lg-4 col-xxl-3 d-flex justify-content-center">
                     <div class="card" data-id="1">
                         <div class="availability-badge not-available">Disponibile</div>
-                        <a href="veicolo-selezionato.html"><img src="./images/moto${count}.png" class="card-img-top"></a>
+                        <a href="veicolo-selezionato.html"><img src="./images/moto${count}.jpg" class="card-img-top"></a>
                         <div class="card-body">
                             <h5 class="card-title kaushan-script-regular">${element.descrizione}</h5>
                             <p class="card-text">
