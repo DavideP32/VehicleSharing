@@ -30,7 +30,7 @@ form.addEventListener("submit", e =>{
     .then(utenteData => {  
         console.log('Login riuscito:', utenteData);
         // localStorage.setItem('utente', JSON.stringify(utenteData));
-        window.location.replace('http://localhost:5500/project-work/index.html');
+        window.location.replace('http://localhost:5500/front-end/index.html');
     })
     .catch(error => {
         console.error('Errore durante il login:', error);
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(utenteData => {
             // Se l'utente è autenticato, reindirizza alla homepage
             if (utenteData) {
-                window.location.replace('http://localhost:5500/project-work/index.html');
+                window.location.replace('http://localhost:5500/front-end/index.html');
                 console.log("utente già autenticato. Reindirizzato alla homepage");
             }
         })

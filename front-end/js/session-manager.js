@@ -72,7 +72,7 @@ function logout() {
             throw new Error('Errore durante il logout');
         }
         updateUI(null);
-        window.location.replace('http://localhost:5500/project-work/login.html');
+        window.location.replace('http://localhost:5500/front-end/login.html');
     })
     .catch(error => {
         console.error('Errore durante il logout:', error);
