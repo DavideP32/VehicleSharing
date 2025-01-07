@@ -14,12 +14,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Aggiunta per la responsività */
+    flex-wrap: wrap;
 }
 
 .hero-content {
     padding: 40px;
-    width: 100%; /* Assicurarsi che la colonna prenda tutta la larghezza */
+    width: 100%;
     box-sizing: border-box;
 }
 
