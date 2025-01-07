@@ -33,6 +33,7 @@ form.addEventListener('submit',  e => {
 
     })
     .then(response =>{
+        window.location.replace('http://localhost:5500/front-end/index.html');
         return response.json();
     })
 
